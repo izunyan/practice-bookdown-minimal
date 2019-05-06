@@ -12,6 +12,7 @@ output:
 (`r format(Sys.time(), '%Y/%m/%d')`現在)
 
 * 何も考えずにとりあえずbookdownでファイルを作ってみる
+  - はじめにに書かれている所が1章になった（回避の仕方分からず…）
 
 * bookdownで作られた有名な例
   - [R for Data Science](https://r4ds.had.co.nz/)
