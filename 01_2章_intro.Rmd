@@ -2,4 +2,5 @@
 
 * 新しいRmdファイルを作成
 * 名前は「数値_ファイル名」
-  - ただし，indexの章が1で始まるため，2章からになる
+  - ここから1章にするためには，index.Rmdのヘッダーの後に `{-}`をつける
+  - 参照：https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements

@@ -7,12 +7,11 @@ output:
   bookdown::gitbook: default
   #bookdown::pdf_book: default
 ---
-# はじめに
+# はじめに {-}
 
 (`r format(Sys.time(), '%Y/%m/%d')`現在)
 
 * 何も考えずにとりあえずbookdownでファイルを作ってみる
-  - はじめにに書かれている所が1章になった（回避の仕方分からず…）
   
 * bookdownで作られた有名な例
   - [R for Data Science](https://r4ds.had.co.nz/)
@@ -20,7 +19,7 @@ output:
 * 詳しくは公式ドキュメント参照
   - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
 
-## サンプルの最小構成プロジェクトをダウンロード
+## サンプルの最小構成プロジェクトをダウンロード {-}
 
 ```{r eval=FALSE}
 # パッケージが入っていない方はまずインストール
@@ -35,10 +34,10 @@ Clone or download > Download ZIP
 
 でダウンロードしたファイルを解凍する
 
-## プロジェクトファイルを開く
+## プロジェクトファイルを開く {-}
 
 解凍したフォルダ内のプロジェクトファイル`bookdown-minimal.Rproj` を実行
 
-## index.Rmdを開いてBuild Bookする
+## index.Rmdを開いてBuild Bookする {-}
 
 右下ペインのFilesタブの中に出てくるindex.Rmdを開いたら，右上ペインのBuildタブを開き，`Build Book`を押す
