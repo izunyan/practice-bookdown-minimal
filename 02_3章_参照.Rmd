@@ -1,0 +1,5 @@
+# 参照
+
+* [{bookdown}を利用してRで本を作成](https://qiita.com/kazutan/items/40b45d4aaba88a4ed706)
+* [bookdownでRmdファイルをｻｯとまとめてGitHubで公開する](https://qiita.com/nozma/items/489497fe246ff8533bf9)
+* [bookdownで何か書くときのメモ](https://qiita.com/nozma/items/979fcb78275bf5b1628f)

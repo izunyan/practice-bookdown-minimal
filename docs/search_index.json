@@ -1,0 +1,5 @@
+[
+["index.html", "bookdownの体験 ch: 1 はじめに 1.1 サンプルの最小構成プロジェクトをダウンロード 1.2 プロジェクトファイルを開く 1.3 index.Rmdを開いてBuild Bookする", " bookdownの体験 izunyan ch: 1 はじめに (2019/05/06現在) 何も考えずにとりあえずbookdownでファイルを作ってみる bookdownで作られた有名な例 R for Data Science 詳しくは公式ドキュメント参照 bookdown: Authoring Books and Technical Documents with R Markdown 1.1 サンプルの最小構成プロジェクトをダウンロード https://github.com/yihui/bookdown-minimal の Clone or download &gt; Download ZIP でダウンロードしたファイルを解凍する 1.2 プロジェクトファイルを開く 解凍したフォルダ内のプロジェクトファイルbookdown-minimal.Rproj を実行 1.3 index.Rmdを開いてBuild Bookする 右下ペインのFilesタブの中に出てくるindex.Rmdを開いたら，右上ペインのBuildタブを開き，Build Bookを押す "],
+["section-3.html", "ch: 2 章の追加", " ch: 2 章の追加 新しいRmdファイルを作成 名前は「数値_ファイル名｝」 ただし，indexの章が1で始まるため，2章からになる "],
+["section-4.html", "ch: 3 参照", " ch: 3 参照 {bookdown}を利用してRで本を作成 bookdownでRmdファイルをｻｯとまとめてGitHubで公開する bookdownで何か書くときのメモ "]
+]
