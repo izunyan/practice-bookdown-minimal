@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html">
-<link rel="next" href="section-4.html">
+<link rel="next" href="figure.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -130,8 +130,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-2"><i class="fa fa-check"></i>プロジェクトファイルを開く</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#index.rmdbuild-book"><i class="fa fa-check"></i>index.Rmdを開いてBuild Bookする</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i><b>1</b> 章の追加</a></li>
-<li class="chapter" data-level="2" data-path="section-4.html"><a href="section-4.html"><i class="fa fa-check"></i><b>2</b> 参照</a></li>
+<li class="chapter" data-level="1" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i><b>1</b> 章の追加</a><ul>
+<li class="chapter" data-level="1.1" data-path="section-3.html"><a href="section-3.html#section-4"><i class="fa fa-check"></i><b>1.1</b> テキスト内のリンク</a></li>
+<li class="chapter" data-level="1.2" data-path="section-3.html"><a href="section-3.html#section-5"><i class="fa fa-check"></i><b>1.2</b> 図の参照</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="figure.html"><a href="figure.html"><i class="fa fa-check"></i><b>2</b> 図</a></li>
+<li class="chapter" data-level="3" data-path="sansyo.html"><a href="sansyo.html"><i class="fa fa-check"></i><b>3</b> 参照</a></li>
 </ul>
 
       </nav>
@@ -153,13 +157,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">ch: 1</span> 章の追加</h1>
 <ul>
 <li>新しいRmdファイルを作成</li>
-<li>名前は「数値_ファイル名」
+<li>名前は「数値_ファイル名」にしてみた（よりよいつけ方は勉強中）
 <ul>
-<li>ここから1章にするためには，index.Rmdのヘッダーの後に <code>{-}</code>をつける</li>
+<li>ここから1章として始めるためには，index.Rmdのヘッダーの後に <code>{-}</code>をつける</li>
 <li>参照：<a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements" class="uri">https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements</a></li>
 </ul></li>
 </ul>
+<div id="section-4" class="section level2">
+<h2><span class="header-section-number">1.1</span> テキスト内のリンク</h2>
+<ul>
+<li><a href="sansyo.html#sansyo">3</a>章の参照にとぶ</li>
+<li>見出し部分の記述を<code># 参照 {#sansyo}</code>としたうえで，リンクは<code>\@ref(sansyo)</code>と記述</li>
+</ul>
+</div>
+<div id="section-5" class="section level2">
+<h2><span class="header-section-number">1.2</span> 図の参照</h2>
+<p>Figure<a href="figure.html#fig:irisplot">2.1</a>にとぶ</p>
 
+</div>
 </div>
             </section>
 
@@ -167,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="section-4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="figure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -14,10 +14,12 @@ output:
 * 何も考えずにとりあえずbookdownでファイルを作ってみる
   
 * bookdownで作られた有名な例
-  - [R for Data Science](https://r4ds.had.co.nz/)
+    + [R for Data Science](https://r4ds.had.co.nz/)
+    + [元のマークダウンファイルなど](https://github.com/hadley/r4ds)
 
 * 詳しくは公式ドキュメント参照
-  - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+    - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+    - [元のマークダウンファイルなど](https://github.com/rstudio/bookdown/tree/master/inst/examples)
 
 ## サンプルの最小構成プロジェクトをダウンロード {-}
 

@@ -1,6 +1,16 @@
 # 章の追加
 
 * 新しいRmdファイルを作成
-* 名前は「数値_ファイル名」
-  - ここから1章にするためには，index.Rmdのヘッダーの後に `{-}`をつける
+* 名前は「数値_ファイル名」にしてみた（よりよいつけ方は勉強中）
+  - ここから1章として始めるためには，index.Rmdのヘッダーの後に `{-}`をつける
   - 参照：https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements
+
+## テキスト内のリンク
+
+* \@ref(sansyo)章の参照にとぶ
+* 見出し部分の記述を`# 参照 {#sansyo}`としたうえで，リンクは`\@ref(sansyo)`と記述
+
+## 図の参照
+
+Figure\@ref(fig:irisplot)にとぶ
+
