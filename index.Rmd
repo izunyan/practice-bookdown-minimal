@@ -42,4 +42,4 @@ Clone or download > Download ZIP
 
 ## index.Rmdを開いてBuild Bookする {-}
 
-右下ペインのFilesタブの中に出てくるindex.Rmdを開いたら，右上ペインのBuildタブを開き，`Build Book`を押す
+右上ペインのBuildタブを開き，`Build Book`を押す
