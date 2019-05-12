@@ -7,10 +7,11 @@
 
 ## テキスト内のリンク
 
-* \@ref(sanko)章の参考サイトにとぶ
-* 見出し部分の記述を`# 参考サイト {#sanko}`としたうえで，リンクは`\@ref(sanko)`と記述
+* 3章見出し部分の記述を`# 参考サイト {#sanko}`とする
+* \@ref(sanko)章の参考サイトにとぶ。左のリンク部分は`\@ref(sanko)`と記述
+
 
 ## 図の参照
 
-Figure\@ref(fig:irisplot)にとぶ
+* Figure\@ref(fig:irisplot)にとぶ
 
