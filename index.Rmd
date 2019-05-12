@@ -36,6 +36,12 @@ Clone or download > Download ZIP
 
 でダウンロードしたファイルを解凍する
 
+(ref:github) Clone or downloadの場所
+
+```{r github, echo=FALSE, fig.align='center', fig.cap='(ref:github)', out.width='70%'}
+knitr::include_graphics("images/github.JPG")
+```
+
 ## プロジェクトファイルを開く {-}
 
 解凍したフォルダ内のプロジェクトファイル`bookdown-minimal.Rproj` を実行
@@ -43,3 +49,11 @@ Clone or download > Download ZIP
 ## index.Rmdを開いてBuild Bookする {-}
 
 右上ペインのBuildタブを開き，`Build Book`を押す
+
+(ref:migiue) Build Bookの場所
+
+```{r migiue, echo=FALSE, fig.align='center', fig.cap='(ref:migiue)', out.width='70%'}
+knitr::include_graphics("images/migiue.JPG")
+```
+
+
