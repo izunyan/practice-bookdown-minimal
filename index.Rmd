@@ -46,7 +46,7 @@ knitr::include_graphics("images/github.JPG")
 
 解凍したフォルダ内のプロジェクトファイル`bookdown-minimal.Rproj` を実行
 
-## index.Rmdを開いてBuild Bookする {-}
+## Build Bookする {-}
 
 右上ペインのBuildタブを開き，`Build Book`を押す
 

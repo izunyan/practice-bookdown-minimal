@@ -1,4 +1,4 @@
-# 参照 {#sansyo}
+# 参考サイト {#sanko}
 
 * [{bookdown}を利用してRで本を作成](https://qiita.com/kazutan/items/40b45d4aaba88a4ed706)
 * [bookdownでRmdファイルをｻｯとまとめてGitHubで公開する](https://qiita.com/nozma/items/489497fe246ff8533bf9)
