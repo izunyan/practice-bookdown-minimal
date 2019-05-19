@@ -173,7 +173,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</code></pre>
 <div class="figure" style="text-align: center"><span id="fig:irisplot"></span>
-<img src="bookdownの体験_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
+<img src="bookdown_taiken_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
 <p class="caption">
 Figure 2.1: 図のタイトル
 </p>
@@ -183,12 +183,20 @@ Figure 2.1: 図のタイトル
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris) <span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</code></pre>
 <div class="figure" style="text-align: center"><span id="fig:iris-ggplot"></span>
-<img src="bookdownの体験_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="70%" />
+<img src="bookdown_taiken_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="70%" />
 <p class="caption">
 Figure 2.2: ggplot
 </p>
 </div>
-<p>図が出ない(T_T)</p>
+<p><del>図が出ない(T_T)</del><br />
+→解決！</p>
+<ul>
+<li>考えられる理由
+<ul>
+<li><code>bookdown.yml</code>中の<code>book_filename:</code>のところの名前に日本語を使っていたため。これはコード実行して作成される図のファイルが入る<code>_bookdown_files</code>の中のフォルダ名になるようで，日本語だとパスが読めずこの図が表示されない事が起こる。</li>
+<li>そもそも<code>docs</code>フォルダ内に<code>book_filename:</code>で指定される名前のフォルダが自動作成されるみたいで，日本語だとこれ自体が作成されなかった</li>
+</ul></li>
+</ul>
 </div>
 <div id="section-6" class="section level2">
 <h2><span class="header-section-number">2.2</span> 表</h2>
