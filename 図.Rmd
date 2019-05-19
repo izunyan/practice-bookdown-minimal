@@ -28,7 +28,7 @@ ggplot(iris) +
 ```{r table-mtcar}
 knitr::kable(
   head(mtcars[, 1:3], 5), booktabs = TRUE,
-  caption = 'A table of the first 10 rows of the mtcars data.'
+  caption = 'mtcarsデータの最初の5行の表'
 )
 ```
 
