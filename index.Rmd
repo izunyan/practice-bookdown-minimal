@@ -3,14 +3,18 @@ title: "bookdownの体験"
 author: "izunyan"
 site: bookdown::bookdown_site
 documentclass: book
+cover-image: images/cover.png
 output:
   bookdown::gitbook: default
   #bookdown::pdf_book: default
 bibliography: "引用文献リスト.bib" # 引用文献の記載ファイルを指定
-biblio-style: "apalike"
-
+biblio-style: "apalike"            # 引用文献の表示スタイルをAPA形式に
 ---
 # はじめに {-}
+
+```{r cover, echo=FALSE,  out.width='60%'}
+knitr::include_graphics("images/cover.png")
+```
 
 (`r format(Sys.time(), '%Y/%m/%d')`現在)
 
@@ -59,4 +63,9 @@ knitr::include_graphics("images/github.JPG")
 knitr::include_graphics("images/migiue.JPG")
 ```
 
+* ここまでで最小構成版は完成。ここの時点ではまだ`_bookdown.yml`や`_output.yml`はなくても大丈夫みたい
 
+## 最小構成から色々追加していくために {-}
+
+* [1 章の追加](#intro)からを参照
+* 追加される章のrmdファイルの順番や，必要なフォルダ名の命名のため等に`_bookdown.yml`の作成が必要
