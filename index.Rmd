@@ -3,7 +3,6 @@ title: "bookdownの体験"
 author: "izunyan"
 site: bookdown::bookdown_site
 documentclass: book
-image_preview: "images/cover.png"
 output:
   bookdown::gitbook: default
   #bookdown::pdf_book: default

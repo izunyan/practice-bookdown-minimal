@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+twitter:
+  username: cbt_test
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /images/cover.png
+        height: 630
+        width: 1200
