@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>ch: 2 図 | bookdownの体験</title>
-  <meta name="description" content="ch: 2 図 | bookdownの体験" />
+  <title>ch: 3 文献の引用方法 | bookdownの体験</title>
+  <meta name="description" content="ch: 3 文献の引用方法 | bookdownの体験" />
   <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="ch: 2 図 | bookdownの体験" />
+  <meta property="og:title" content="ch: 3 文献の引用方法 | bookdownの体験" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ch: 2 図 | bookdownの体験" />
+  <meta name="twitter:title" content="ch: 3 文献の引用方法 | bookdownの体験" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="section-3.html">
-<link rel="next" href="bunken.html">
+<link rel="prev" href="figure.html">
+<link rel="next" href="sanko.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -160,82 +160,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="figure" class="section level1">
-<h1><span class="header-section-number">ch: 2</span> 図</h1>
-<div id="section-6" class="section level2">
-<h2><span class="header-section-number">2.1</span> 図</h2>
+<div id="bunken" class="section level1">
+<h1><span class="header-section-number">ch: 3</span> 文献の引用方法</h1>
+<div id="section-8" class="section level3 unnumbered">
+<h3>本</h3>
 <ul>
-<li>図の名前の指定<code>(ref:irisplot) 図のタイトル</code></li>
+<li><span class="citation">Wickham and Grolemund (2016)</span> <code>@wickham2016r</code>と記述</li>
+<li><span class="citation">(Wickham and Grolemund 2016)</span> <code>[@wickham2016r]</code>と記述</li>
 </ul>
-
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:irisplot"></span>
-<img src="bookdownの体験_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
-<p class="caption">
-Figure 2.1: 図のタイトル
-</p>
 </div>
-
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:iris-ggplot"></span>
-<img src="bookdownの体験_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="30%" />
-<p class="caption">
-Figure 2.2: ggplot
-</p>
-</div>
-<p>図が出ない(T_T)</p>
-</div>
-<div id="section-7" class="section level2">
-<h2><span class="header-section-number">2.2</span> 表</h2>
-<pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">kable</span>(
-  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>,
-  <span class="dt">caption =</span> <span class="st">&#39;A table of the first 10 rows of the mtcars data.&#39;</span>
-)</code></pre>
-<table>
-<caption><span id="tab:table-mtcar">Table 2.1: </span>A table of the first 10 rows of the mtcars data.</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">mpg</th>
-<th align="right">cyl</th>
-<th align="right">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mazda RX4</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160</td>
-</tr>
-<tr class="even">
-<td>Mazda RX4 Wag</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160</td>
-</tr>
-<tr class="odd">
-<td>Datsun 710</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">108</td>
-</tr>
-<tr class="even">
-<td>Hornet 4 Drive</td>
-<td align="right">21.4</td>
-<td align="right">6</td>
-<td align="right">258</td>
-</tr>
-<tr class="odd">
-<td>Hornet Sportabout</td>
-<td align="right">18.7</td>
-<td align="right">8</td>
-<td align="right">360</td>
-</tr>
-</tbody>
-</table>
+<div id="section-9" class="section level3 unnumbered">
+<h3>論文</h3>
+<ul>
+<li><span class="citation">Wasserstein, Lazar, and others (2016)</span></li>
+</ul>
 
 </div>
 </div>
@@ -244,8 +182,8 @@ Figure 2.2: ggplot
           </div>
         </div>
       </div>
-<a href="section-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="bunken.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="figure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sanko.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

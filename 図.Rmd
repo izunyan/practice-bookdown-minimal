@@ -1,0 +1,36 @@
+# 図 {#figure}
+
+## 図
+* 図の名前の指定`(ref:irisplot) 図のタイトル`
+
+(ref:irisplot) 図のタイトル
+
+```{r irisplot, echo=TRUE, fig.align='center', fig.asp=.75, fig.cap='(ref:irisplot)', out.width='70%'}
+plot(iris$Sepal.Length, iris$Petal.Length)
+```
+
+(ref:iris-ggplot) ggplot
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+```{r iris-ggplot, echo=TRUE, fig.align='center', fig.asp = .75, fig.cap='(ref:iris-ggplot)', out.width='30%'}
+ggplot(iris) +
+  geom_point(aes(Sepal.Length, Petal.Length, color = Species))
+```
+
+
+図が出ない(T_T)
+
+## 表
+
+```{r table-mtcar}
+knitr::kable(
+  head(mtcars[, 1:3], 5), booktabs = TRUE,
+  caption = 'A table of the first 10 rows of the mtcars data.'
+)
+```
+
+
+

@@ -1,0 +1,8 @@
+# 文献の引用方法 {#bunken}
+
+### 本 {-}
+* @wickham2016r `@wickham2016r`と記述
+* [@wickham2016r] `[@wickham2016r]`と記述
+ 
+### 論文 {-}
+* @wasserstein2016asa
