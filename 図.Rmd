@@ -15,7 +15,7 @@ plot(iris$Sepal.Length, iris$Petal.Length)
 library(tidyverse)
 ```
 
-```{r iris-ggplot, echo=TRUE, fig.align='center', fig.asp = .75, fig.cap='(ref:iris-ggplot)', out.width='30%'}
+```{r iris-ggplot, echo=TRUE, fig.align='center', fig.asp = .75, fig.cap='(ref:iris-ggplot)', out.width='70%'}
 ggplot(iris) +
   geom_point(aes(Sepal.Length, Petal.Length, color = Species))
 ```
@@ -27,7 +27,7 @@ ggplot(iris) +
 
 ```{r table-mtcar}
 knitr::kable(
-  head(mtcars[, 1:3], 5), booktabs = TRUE,
+  head(mtcars[, 1:3], 5), booktabs = TRUE, # 1-3列目のみ，最初の5行
   caption = 'mtcarsデータの最初の5行の表'
 )
 ```
