@@ -6,6 +6,6 @@ defaults:
       path: ""
     values:
       image:
-        path: /images/cover.png
+        path: "images/cover.png"
         height: 630
         width: 1200
