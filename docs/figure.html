@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>ch: 2 図 | bookdownの体験</title>
   <meta name="description" content="ch: 2 図 | bookdownの体験" />
-  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="ch: 2 図 | bookdownの体験" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html">
-<link rel="next" href="bunken.html">
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="bunken.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -54,7 +54,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -172,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>図の名前の指定<code>(ref:irisplot) 図のタイトル</code></li>
 </ul>
 
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:irisplot"></span>
 <img src="bookdown_taiken_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
 <p class="caption">
@@ -180,9 +179,9 @@ Figure 2.1: 図のタイトル
 </p>
 </div>
 
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(tidyverse)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">ggplot</span>(iris) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:iris-ggplot"></span>
 <img src="bookdown_taiken_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="70%" />
 <p class="caption">
@@ -201,10 +200,10 @@ Figure 2.2: ggplot
 </div>
 <div id="section-7" class="section level2">
 <h2><span class="header-section-number">2.2</span> 表</h2>
-<pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">kable</span>(
-  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="co"># 1-3列目のみ，最初の5行</span>
-  <span class="dt">caption =</span> <span class="st">&#39;mtcarsデータの最初の5行の表&#39;</span>
-)</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="co"># 1-3列目のみ，最初の5行</span></a>
+<a class="sourceLine" id="cb5-3" title="3">  <span class="dt">caption =</span> <span class="st">&#39;mtcarsデータの最初の5行の表&#39;</span></a>
+<a class="sourceLine" id="cb5-4" title="4">)</a></code></pre></div>
 <table>
 <caption><span id="tab:table-mtcar">Table 2.1: </span>mtcarsデータの最初の5行の表</caption>
 <thead>

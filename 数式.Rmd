@@ -1,0 +1,16 @@
+# 数式 {#susiki}
+
+## 数式
+
+* 記法はtex
+* \$$ \$$で囲んだ行に数式を書く
+
+http://www.latex-cmd.com/
+
+$$
+p_j(\theta)=\frac{1}{1+\exp(-Da_j(\theta-b_j))}
+$$
+
+https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations
+
+

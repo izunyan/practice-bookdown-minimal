@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>ch: 1 章の追加 | bookdownの体験</title>
   <meta name="description" content="ch: 1 章の追加 | bookdownの体験" />
-  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="ch: 1 章の追加 | bookdownの体験" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="figure.html">
+<link rel="prev" href="index.html"/>
+<link rel="next" href="figure.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -54,7 +54,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -170,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>新しいRmdファイルを作成</li>
 <li><del>名前は「数値_ファイル名」にしてみた（よりよいつけ方は勉強中）</del></li>
 <li>数値_ファイル名だと，後から章を挿入するときに不便なので，<code>_bookdown.yml</code>にて<code>rmd_files: []</code>中に並べたい順に指定</li>
-<li>ここから1章として始めるためには，index.Rmdのヘッダーの後に <code>{-}</code>をつける
+<li>ここから1章として始める（はじめにの章に数字をつけない）ためには，index.Rmdのヘッダーの後に <code>{-}</code>をつける
 <ul>
 <li>参照：<a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements" class="uri">https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements</a></li>
 </ul></li>
@@ -187,7 +186,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="section-5" class="section level2">
 <h2><span class="header-section-number">1.2</span> 図の参照</h2>
 <ul>
-<li>Figure<a href="figure.html#fig:irisplot">2.1</a>にとぶ</li>
+<li>Figure<a href="figure.html#fig:irisplot">2.1</a>にとぶ。左のリンク部分は<code>\@ref(fig:irisplot)</code>と記述</li>
 </ul>
 
 </div>
