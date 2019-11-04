@@ -5,8 +5,9 @@
 * 数値_ファイル名だと，後から章を挿入するときに不便なので，`_bookdown.yml`にて`rmd_files: []`中に並べたい順に指定
 * ここから1章として始める（はじめにの章に数字をつけない）ためには，index.Rmdのヘッダーの後に `{-}`をつける
   - 参照：https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements
+  - ただし，エラー回避のため，漢字が含まれるヘッダーについて，識別子（例：`{-#hajimeni}`）をつけている
 
-## テキスト内のリンク
+## テキスト内のリンク {#intro_link}
 
 * まず4章見出し部分の記述を`# 参考サイト {#sanko}`としておく
 * 章の数字でリンクを張る：\@ref(sanko)章。左のリンク部分は`\@ref(sanko)`と記述
@@ -14,7 +15,7 @@
 [参考サイト](#sanko)。左のリンク部分は`[参考サイト](#sanko)`と記述
 
 
-## 図の参照
+## 図の参照 {#intro_sansho}
 
 * Figure\@ref(fig:irisplot)にとぶ。左のリンク部分は`\@ref(fig:irisplot)`と記述
 

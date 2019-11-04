@@ -1,6 +1,6 @@
 # 図 {#figure}
 
-## 図
+## 図 {#figure_fig}
 * 図の名前の指定`(ref:irisplot) 図のタイトル`
 
 (ref:irisplot) 図のタイトル
@@ -28,7 +28,7 @@ ggplot(iris) +
     + `bookdown.yml`中の`book_filename:`のところの名前に日本語を使っていたため。これはコード実行して作成される図のファイルが入る`_bookdown_files`の中のフォルダ名になるようで，日本語だとパスが読めずこの図が表示されない事が起こる。
     + そもそも`docs`フォルダ内に`book_filename:`で指定される名前のフォルダが自動作成されるみたいで，日本語だとこれ自体が作成されなかった
 
-## 表
+## 表 {#figure_table}
 
 ```{r table-mtcar}
 knitr::kable(

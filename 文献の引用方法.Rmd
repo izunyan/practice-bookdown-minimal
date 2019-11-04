@@ -1,13 +1,13 @@
 # 文献の引用方法 {#bunken}
 
-## 引用文献リストの作成方法
+## 引用文献リストの作成方法 {#bunken_list}
 
 * BibTeX形式で作成された一覧のテキストファイルを，`引用文献リスト.bib`として保存
     + 今回は[Google Scholar](https://scholar.google.co.jp/)で個々の文献を検索して作成
 * MendeleyやZoteroでも作れるらしいので，そちらで管理して，BibTeX形式ファイルを作成するのがよさそう
 
 
-## 本文の中での引用方法の例
+## 本文の中での引用方法の例 {#bunken_example}
 
 * それぞれ最後の順番で置かれているrmdファイル（ここでは[引用文献](#reference)）に自動で追加される
 

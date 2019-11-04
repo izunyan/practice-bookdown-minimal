@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>ch: 2 図 | bookdownの体験</title>
-  <meta name="description" content="ch: 2 図 | bookdownの体験" />
+  <title>ch: 4 エラー対処 | bookdownの体験</title>
+  <meta name="description" content="ch: 4 エラー対処 | bookdownの体験" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="ch: 2 図 | bookdownの体験" />
+  <meta property="og:title" content="ch: 4 エラー対処 | bookdownの体験" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ch: 2 図 | bookdownの体験" />
+  <meta name="twitter:title" content="ch: 4 エラー対処 | bookdownの体験" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html"/>
-<link rel="next" href="bunken.html"/>
+<link rel="prev" href="bunken.html"/>
+<link rel="next" href="sanko.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -174,90 +174,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="figure" class="section level1">
-<h1><span class="header-section-number">ch: 2</span> 図</h1>
-<div id="figure_fig" class="section level2">
-<h2><span class="header-section-number">2.1</span> 図</h2>
+<div id="error" class="section level1">
+<h1><span class="header-section-number">ch: 4</span> エラー対処</h1>
 <ul>
-<li>図の名前の指定<code>(ref:irisplot) 図のタイトル</code></li>
+<li>Build Bookを実行しても途中で止まるエラー</li>
 </ul>
-
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</a></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:irisplot"></span>
-<img src="bookdown_taiken_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
-<p class="caption">
-Figure 2.1: 図のタイトル
-</p>
-</div>
-
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(tidyverse)</a></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">ggplot</span>(iris) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</a></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:iris-ggplot"></span>
-<img src="bookdown_taiken_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="70%" />
-<p class="caption">
-Figure 2.2: ggplot
-</p>
-</div>
-<p><del>図が出ない(T_T)</del><br />
-→解決！</p>
+<div id="error_kanji" class="section level2">
+<h2><span class="header-section-number">4.1</span> セクションヘッダーに漢字が含まれる場合に発生</h2>
 <ul>
-<li>考えられる理由
+<li>発生する環境が再現できないが，以下のエラーが出てBuild Bookが途中でとまる</li>
+</ul>
+<blockquote>
+<p>file.exists(f) ここに文字化けの文字列 <Anonymous> … move_files_html -&gt; local_resources -&gt; grep -&gt; unique -&gt; file.exists</p>
+</blockquote>
 <ul>
-<li><code>bookdown.yml</code>中の<code>book_filename:</code>のところの名前に日本語を使っていたため。これはコード実行して作成される図のファイルが入る<code>_bookdown_files</code>の中のフォルダ名になるようで，日本語だとパスが読めずこの図が表示されない事が起こる。</li>
-<li>そもそも<code>docs</code>フォルダ内に<code>book_filename:</code>で指定される名前のフォルダが自動作成されるみたいで，日本語だとこれ自体が作成されなかった</li>
+<li>対処法
+<ul>
+<li>参考: <a href="https://d.cosx.org/d/420961-r-bookdown">更新R包后，使用bookdown时出现编译失败问题请教</a> （中国語なのでgoogle翻訳を使うと何となく分かる）</li>
+<li>漢字が含まれるセクションヘッダーには，必ず識別子をつける</li>
+<li>例： <code># 参考サイト {#sanko}</code></li>
+<li>例： 番号をつけたくない場合は<code># はじめに {-#hajime}</code></li>
+<li>参考: マルチバイト文字についての注意 <a href="https://bookdown.org/yihui/bookdown/internationalization.html">bookdown: Authoring Books and Technical Documents with R Markdown 4.5 Internationalization</a></li>
 </ul></li>
 </ul>
 </div>
-<div id="figure_table" class="section level2">
-<h2><span class="header-section-number">2.2</span> 表</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
-<a class="sourceLine" id="cb5-2" title="2">  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="co"># 1-3列目のみ，最初の5行</span></a>
-<a class="sourceLine" id="cb5-3" title="3">  <span class="dt">caption =</span> <span class="st">&#39;mtcarsデータの最初の5行の表&#39;</span></a>
-<a class="sourceLine" id="cb5-4" title="4">)</a></code></pre></div>
-<table>
-<caption><span id="tab:table-mtcar">Table 2.1: </span>mtcarsデータの最初の5行の表</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">mpg</th>
-<th align="right">cyl</th>
-<th align="right">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mazda RX4</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160</td>
-</tr>
-<tr class="even">
-<td>Mazda RX4 Wag</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160</td>
-</tr>
-<tr class="odd">
-<td>Datsun 710</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">108</td>
-</tr>
-<tr class="even">
-<td>Hornet 4 Drive</td>
-<td align="right">21.4</td>
-<td align="right">6</td>
-<td align="right">258</td>
-</tr>
-<tr class="odd">
-<td>Hornet Sportabout</td>
-<td align="right">18.7</td>
-<td align="right">8</td>
-<td align="right">360</td>
-</tr>
-</tbody>
-</table>
+<div id="error_tlmgr" class="section level2">
+<h2><span class="header-section-number">4.2</span> tlmgrをアップデートして下さいと言われる</h2>
+<ul>
+<li>以下のエラーが出てBuild Bookが途中でとまる</li>
+</ul>
+<blockquote>
+<p>tlmgr itself needs to be updated.
+Please do this via either
+tlmgr update –self</p>
+</blockquote>
+<ul>
+<li>対処法
+<ul>
+<li><code>tinytex::tlmgr_update()</code> tinytexの関数を使ってアップデート</li>
+</ul></li>
+</ul>
+</div>
+<div id="error_pandoc" class="section level2">
+<h2><span class="header-section-number">4.3</span> geometryについてのエラーが出る</h2>
+<ul>
+<li>以下のエラーが出てBuild Bookが途中でとまる</li>
+</ul>
+<blockquote>
+<p>! LaTeX Error: Option clash for package geometry.</p>
+</blockquote>
+<ul>
+<li>対処法
+<ul>
+<li>参考: <a href="https://teastat.blogspot.com/2019/01/bookdown.html">Bookdownによる技術系同人誌執筆</a></li>
+<li>テンプレートは自分の環境では，パッケージが入っているフォルダの，rmarkdown &gt; rmd &gt; latexのフォルダ中に入っていた。これをテキストエディタ等で開く</li>
+<li><code>\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}</code>の行頭に<code>%</code>をつけてコメントアウトするだけ</li>
+</ul></li>
+</ul>
 
 </div>
 </div>
@@ -266,8 +239,8 @@ Figure 2.2: ggplot
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="bunken.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="bunken.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sanko.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

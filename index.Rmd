@@ -2,14 +2,13 @@
 title: "bookdownの体験"
 author: "izunyan"
 site: bookdown::bookdown_site
-documentclass: book
-output:
-  bookdown::gitbook: default
-  #bookdown::pdf_book: default
+documentclass: bxjsbook
+classoption: xelatex,ja=standard
+geometry: no
 bibliography: "引用文献リスト.bib" # 引用文献の記載ファイルを指定
 biblio-style: "apalike"            # 引用文献の表示スタイルをAPA形式に
 ---
-# はじめに {-}
+# はじめに {-#hajime}
 
 ```{r cover, echo=FALSE,  out.width='60%'}
 knitr::include_graphics("images/cover.png")
@@ -24,10 +23,10 @@ knitr::include_graphics("images/cover.png")
     + [元のマークダウンファイルなど](https://github.com/hadley/r4ds)
 
 * 詳しくは公式ドキュメント参照
-    - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-    - [元のマークダウンファイルなど](https://github.com/rstudio/bookdown/tree/master/inst/examples)
+    + [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+    + [元のマークダウンファイルなど](https://github.com/rstudio/bookdown/tree/master/inst/examples)
 
-## サンプルの最小構成プロジェクトをダウンロード {-}
+## サンプルの最小構成プロジェクトをダウンロード {-#hajime_dl}
 
 ```{r eval=FALSE}
 # パッケージが入っていない方はまずインストール
@@ -38,7 +37,7 @@ https://github.com/yihui/bookdown-minimal
 
 の
 
-Clone or download > Download ZIP
+  Clone or download > Download ZIP
 
 でダウンロードしたファイルを解凍する
 
@@ -48,11 +47,11 @@ Clone or download > Download ZIP
 knitr::include_graphics("images/github.JPG")
 ```
 
-## プロジェクトファイルを開く {-}
+## プロジェクトファイルを開く {-#hajime_open}
 
 解凍したフォルダ内のプロジェクトファイル`bookdown-minimal.Rproj` を実行
 
-## Build Bookする {-}
+## Build Bookする {-#hajime_bb}
 
 右上ペインのBuildタブを開き，`Build Book`を押す
 
@@ -64,7 +63,7 @@ knitr::include_graphics("images/migiue.JPG")
 
 * ここまでで最小構成版は完成。ここの時点ではまだ`_bookdown.yml`や`_output.yml`はなくても大丈夫みたい
 
-## 最小構成から色々追加していくために {-}
+## 最小構成から色々追加していくために {-#hajime_add}
 
 * [1 章の追加](#intro)からを参照
 * 追加される章のrmdファイルの順番や，必要なフォルダ名の命名のため等に`_bookdown.yml`の作成が必要

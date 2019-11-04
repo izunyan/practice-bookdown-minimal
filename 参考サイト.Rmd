@@ -1,5 +1,10 @@
 # 参考サイト {#sanko}
 
+## 全般 {#sanko_general}
 * [{bookdown}を利用してRで本を作成](https://qiita.com/kazutan/items/40b45d4aaba88a4ed706)
 * [bookdownでRmdファイルをｻｯとまとめてGitHubで公開する](https://qiita.com/nozma/items/489497fe246ff8533bf9)
 * [bookdownで何か書くときのメモ](https://qiita.com/nozma/items/979fcb78275bf5b1628f)
+
+## pdf作成 {#sanko_pdf}
+* [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)
+    + Bookdownでのpdf出力について，エラーばかりで苦しんでいた所，このページの情報に大変お世話になりました
