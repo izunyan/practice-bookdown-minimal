@@ -8,3 +8,5 @@
 ## pdf作成 {#sanko_pdf}
 * [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)
     + Bookdownでのpdf出力について，エラーばかりで苦しんでいた所，このページの情報に大変お世話になりました
+* [TinyTeXを使って10分で(R向けの)LaTeX環境を整える](https://qiita.com/nozma/items/1c6b000b674225fd40d7)
+    + 見出しの章番号をまっとうなものにするために必要なYAMLヘッダが分かります

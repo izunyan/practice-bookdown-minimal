@@ -1,4 +1,4 @@
-\documentclass[xelatex,ja=standard]{bxjsbook}
+\documentclass[xelatex, ja=standard, b5paper]{bxjsbook}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -132,16 +132,16 @@
 \maketitle
 
 {
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 }
 \hypertarget{hajime}{%
-\section*{はじめに}\label{hajime}}
-\addcontentsline{toc}{section}{はじめに}
+\chapter*{はじめに}\label{hajime}}
+\addcontentsline{toc}{chapter}{はじめに}
 
 \includegraphics[width=0.6\linewidth]{images/cover}
 
-(2019/11/04現在)
+(2019/11/10現在)
 
 \begin{itemize}
 \item
@@ -169,8 +169,8 @@
 \end{itemize}
 
 \hypertarget{hajime_dl}{%
-\subsection*{サンプルの最小構成プロジェクトをダウンロード}\label{hajime_dl}}
-\addcontentsline{toc}{subsection}{サンプルの最小構成プロジェクトをダウンロード}
+\section*{サンプルの最小構成プロジェクトをダウンロード}\label{hajime_dl}}
+\addcontentsline{toc}{section}{サンプルの最小構成プロジェクトをダウンロード}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -199,14 +199,14 @@ Clone or download \textgreater{} Download ZIP
 \end{figure}
 
 \hypertarget{hajime_open}{%
-\subsection*{プロジェクトファイルを開く}\label{hajime_open}}
-\addcontentsline{toc}{subsection}{プロジェクトファイルを開く}
+\section*{プロジェクトファイルを開く}\label{hajime_open}}
+\addcontentsline{toc}{section}{プロジェクトファイルを開く}
 
 解凍したフォルダ内のプロジェクトファイル\texttt{bookdown-minimal.Rproj} を実行
 
 \hypertarget{hajime_bb}{%
-\subsection*{Build Bookする}\label{hajime_bb}}
-\addcontentsline{toc}{subsection}{Build Bookする}
+\section*{Build Bookする}\label{hajime_bb}}
+\addcontentsline{toc}{section}{Build Bookする}
 
 右上ペインのBuildタブを開き，\texttt{Build\ Book}を押す
 
@@ -228,8 +228,8 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{hajime_add}{%
-\subsection*{最小構成から色々追加していくために}\label{hajime_add}}
-\addcontentsline{toc}{subsection}{最小構成から色々追加していくために}
+\section*{最小構成から色々追加していくために}\label{hajime_add}}
+\addcontentsline{toc}{section}{最小構成から色々追加していくために}
 
 \begin{itemize}
 \tightlist
@@ -240,7 +240,7 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{intro}{%
-\section{章の追加}\label{intro}}
+\chapter{章の追加}\label{intro}}
 
 \begin{itemize}
 \tightlist
@@ -263,7 +263,7 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{intro_link}{%
-\subsection{テキスト内のリンク}\label{intro_link}}
+\section{テキスト内のリンク}\label{intro_link}}
 
 \begin{itemize}
 \tightlist
@@ -277,7 +277,7 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{intro_sansho}{%
-\subsection{図の参照}\label{intro_sansho}}
+\section{図の参照}\label{intro_sansho}}
 
 \begin{itemize}
 \tightlist
@@ -286,10 +286,10 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{figure}{%
-\section{図}\label{figure}}
+\chapter{図}\label{figure}}
 
 \hypertarget{figure_fig}{%
-\subsection{図}\label{figure_fig}}
+\section{図}\label{figure_fig}}
 
 \begin{itemize}
 \tightlist
@@ -356,7 +356,7 @@ Clone or download \textgreater{} Download ZIP
 \end{itemize}
 
 \hypertarget{figure_table}{%
-\subsection{表}\label{figure_table}}
+\section{表}\label{figure_table}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -385,10 +385,10 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{table}
 
 \hypertarget{bunken}{%
-\section{文献の引用方法}\label{bunken}}
+\chapter{文献の引用方法}\label{bunken}}
 
 \hypertarget{bunken_list}{%
-\subsection{引用文献リストの作成方法}\label{bunken_list}}
+\section{引用文献リストの作成方法}\label{bunken_list}}
 
 \begin{itemize}
 \tightlist
@@ -405,7 +405,7 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{itemize}
 
 \hypertarget{bunken_example}{%
-\subsection{本文の中での引用方法の例}\label{bunken_example}}
+\section{本文の中での引用方法の例}\label{bunken_example}}
 
 \begin{itemize}
 \tightlist
@@ -414,8 +414,8 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{itemize}
 
 \hypertarget{ux672c}{%
-\subsubsection*{本}\label{ux672c}}
-\addcontentsline{toc}{subsubsection}{本}
+\subsection*{本}\label{ux672c}}
+\addcontentsline{toc}{subsection}{本}
 
 \begin{itemize}
 \tightlist
@@ -426,8 +426,8 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{itemize}
 
 \hypertarget{ux8ad6ux6587}{%
-\subsubsection*{論文}\label{ux8ad6ux6587}}
-\addcontentsline{toc}{subsubsection}{論文}
+\subsection*{論文}\label{ux8ad6ux6587}}
+\addcontentsline{toc}{subsection}{論文}
 
 \begin{itemize}
 \tightlist
@@ -436,7 +436,7 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{itemize}
 
 \hypertarget{error}{%
-\section{エラー対処}\label{error}}
+\chapter{エラー対処}\label{error}}
 
 \begin{itemize}
 \tightlist
@@ -445,7 +445,7 @@ Hornet Sportabout & 18.7 & 8 & 360\\
 \end{itemize}
 
 \hypertarget{error_kanji}{%
-\subsection{セクションヘッダーに漢字が含まれる場合に発生}\label{error_kanji}}
+\section{セクションヘッダーに漢字が含まれる場合に発生}\label{error_kanji}}
 
 \begin{itemize}
 \tightlist
@@ -478,7 +478,7 @@ file.exists(f) ここに文字化けの文字列 \ldots{} move\_files\_html -\te
 \end{itemize}
 
 \hypertarget{error_tlmgr}{%
-\subsection{tlmgrをアップデートして下さいと言われる}\label{error_tlmgr}}
+\section{tlmgrをアップデートして下さいと言われる}\label{error_tlmgr}}
 
 \begin{itemize}
 \tightlist
@@ -505,7 +505,7 @@ tlmgr update --self
 \end{itemize}
 
 \hypertarget{error_pandoc}{%
-\subsection{geometryについてのエラーが出る}\label{error_pandoc}}
+\section{geometryについてのエラーが出る}\label{error_pandoc}}
 
 \begin{itemize}
 \tightlist
@@ -534,10 +534,10 @@ tlmgr update --self
 \end{itemize}
 
 \hypertarget{sanko}{%
-\section{参考サイト}\label{sanko}}
+\chapter{参考サイト}\label{sanko}}
 
 \hypertarget{sanko_general}{%
-\subsection{全般}\label{sanko_general}}
+\section{全般}\label{sanko_general}}
 
 \begin{itemize}
 \tightlist
@@ -550,7 +550,7 @@ tlmgr update --self
 \end{itemize}
 
 \hypertarget{sanko_pdf}{%
-\subsection{pdf作成}\label{sanko_pdf}}
+\section{pdf作成}\label{sanko_pdf}}
 
 \begin{itemize}
 \tightlist
@@ -565,8 +565,8 @@ tlmgr update --self
 \end{itemize}
 
 \hypertarget{reference}{%
-\section*{引用文献}\label{reference}}
-\addcontentsline{toc}{section}{引用文献}
+\chapter*{引用文献}\label{reference}}
+\addcontentsline{toc}{chapter}{引用文献}
 
 \hypertarget{refs}{}
 \leavevmode\hypertarget{ref-wasserstein2016asa}{}%

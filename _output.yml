@@ -2,4 +2,5 @@ bookdown::gitbook: default
 bookdown::pdf_book:
       latex_engine: xelatex
       keep_tex: yes
+      pandoc_args: --top-level-division=chapter
 bookdown::epub_book:
