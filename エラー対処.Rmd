@@ -10,10 +10,10 @@
 
 * 対処法
     + 参考: [更新R包后，使用bookdown时出现编译失败问题请教](https://d.cosx.org/d/420961-r-bookdown) （中国語なのでgoogle翻訳を使うと何となく分かる）
-    + 漢字が含まれるセクションヘッダーには，必ず識別子をつける
-    + 例： `# 参考サイト {#sanko}`
-    + 例： 番号をつけたくない場合は`# はじめに {-#hajime}`
-    + 参考: マルチバイト文字についての注意 [bookdown: Authoring Books and Technical Documents with R Markdown 4.5 Internationalization](https://bookdown.org/yihui/bookdown/internationalization.html)
+    + 漢字が含まれる**セクションヘッダーには，必ず識別子**をつける
+      * 例： `# 参考サイト {#sanko}`
+      * 例： 番号をつけたくない場合は`# はじめに {-#hajime}`
+      * 参考: マルチバイト文字についての注意 [bookdown: Authoring Books and Technical Documents with R Markdown 4.5 Internationalization](https://bookdown.org/yihui/bookdown/internationalization.html)
 
 ## tlmgrをアップデートして下さいと言われる {#error_tlmgr}
 
@@ -36,4 +36,5 @@ Please do this via either
     + 参考: [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)
     + テンプレートは自分の環境では，パッケージが入っているフォルダの，rmarkdown > rmd > latexのフォルダ中に入っていた。これをテキストエディタ等で開く
     + `\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}`の行頭に`% `をつけてコメントアウトするだけ
-    
+
+
