@@ -148,9 +148,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="error.html"><a href="error.html"><i class="fa fa-check"></i><b>4</b> エラー対処</a><ul>
-<li class="chapter" data-level="4.1" data-path="error.html"><a href="error.html#error_kanji"><i class="fa fa-check"></i><b>4.1</b> セクションヘッダーに漢字が含まれる場合に発生</a></li>
-<li class="chapter" data-level="4.2" data-path="error.html"><a href="error.html#error_tlmgr"><i class="fa fa-check"></i><b>4.2</b> tlmgrをアップデートして下さいと言われる</a></li>
-<li class="chapter" data-level="4.3" data-path="error.html"><a href="error.html#error_pandoc"><i class="fa fa-check"></i><b>4.3</b> geometryについてのエラーが出る</a></li>
+<li class="chapter" data-level="4.1" data-path="error.html"><a href="error.html#error_bbstop"><i class="fa fa-check"></i><b>4.1</b> Build Bookを実行しても途中で止まるエラー</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="error.html"><a href="error.html#error_bbstop_kanji"><i class="fa fa-check"></i><b>4.1.1</b> セクションヘッダーに漢字が含まれる場合に発生</a></li>
+<li class="chapter" data-level="4.1.2" data-path="error.html"><a href="error.html#error_bbstop_tlmgr"><i class="fa fa-check"></i><b>4.1.2</b> tlmgrをアップデートして下さいと言われる</a></li>
+<li class="chapter" data-level="4.1.3" data-path="error.html"><a href="error.html#error_bbstop_geo"><i class="fa fa-check"></i><b>4.1.3</b> geometryについてのエラーが出る</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="sanko.html"><a href="sanko.html"><i class="fa fa-check"></i><b>5</b> 参考サイト</a><ul>
 <li class="chapter" data-level="5.1" data-path="sanko.html"><a href="sanko.html#sanko_general"><i class="fa fa-check"></i><b>5.1</b> 全般</a></li>
@@ -176,11 +178,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="error" class="section level1">
 <h1><span class="header-section-number">ch: 4</span> エラー対処</h1>
-<ul>
-<li>Build Bookを実行しても途中で止まるエラー</li>
-</ul>
-<div id="error_kanji" class="section level2">
-<h2><span class="header-section-number">4.1</span> セクションヘッダーに漢字が含まれる場合に発生</h2>
+<div id="error_bbstop" class="section level2">
+<h2><span class="header-section-number">4.1</span> Build Bookを実行しても途中で止まるエラー</h2>
+<div id="error_bbstop_kanji" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> セクションヘッダーに漢字が含まれる場合に発生</h3>
 <ul>
 <li>発生する環境が再現できないが，以下のエラーが出てBuild Bookが途中でとまる</li>
 </ul>
@@ -200,8 +201,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 </div>
-<div id="error_tlmgr" class="section level2">
-<h2><span class="header-section-number">4.2</span> tlmgrをアップデートして下さいと言われる</h2>
+<div id="error_bbstop_tlmgr" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> tlmgrをアップデートして下さいと言われる</h3>
 <ul>
 <li>以下のエラーが出てBuild Bookが途中でとまる</li>
 </ul>
@@ -217,8 +218,8 @@ tlmgr update –self</p>
 </ul></li>
 </ul>
 </div>
-<div id="error_pandoc" class="section level2">
-<h2><span class="header-section-number">4.3</span> geometryについてのエラーが出る</h2>
+<div id="error_bbstop_geo" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> geometryについてのエラーが出る</h3>
 <ul>
 <li>以下のエラーが出てBuild Bookが途中でとまる</li>
 </ul>
@@ -234,6 +235,7 @@ tlmgr update –self</p>
 </ul></li>
 </ul>
 
+</div>
 </div>
 </div>
             </section>

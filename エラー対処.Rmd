@@ -1,8 +1,8 @@
 # エラー対処 {#error}
 
-* Build Bookを実行しても途中で止まるエラー
+## Build Bookを実行しても途中で止まるエラー {#error_bbstop}
 
-## セクションヘッダーに漢字が含まれる場合に発生 {#error_kanji}
+### セクションヘッダーに漢字が含まれる場合に発生 {#error_bbstop_kanji}
 
 * 発生する環境が再現できないが，以下のエラーが出てBuild Bookが途中でとまる
 
@@ -15,7 +15,7 @@
       * 例： 番号をつけたくない場合は`# はじめに {-#hajime}`
       * 参考: マルチバイト文字についての注意 [bookdown: Authoring Books and Technical Documents with R Markdown 4.5 Internationalization](https://bookdown.org/yihui/bookdown/internationalization.html)
 
-## tlmgrをアップデートして下さいと言われる {#error_tlmgr}
+### tlmgrをアップデートして下さいと言われる {#error_bbstop_tlmgr}
 
 * 以下のエラーが出てBuild Bookが途中でとまる
 
@@ -26,7 +26,7 @@ Please do this via either
 * 対処法
     + `tinytex::tlmgr_update()` tinytexの関数を使ってアップデート
     
-## geometryについてのエラーが出る {#error_pandoc}
+### geometryについてのエラーが出る {#error_bbstop_geo}
 
 * 以下のエラーが出てBuild Bookが途中でとまる
 
