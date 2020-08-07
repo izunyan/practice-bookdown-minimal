@@ -34,6 +34,7 @@ Please do this via either
 
 * 対処法
     + 参考: [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)
+    + Buid BookでPDFを作成した後に表示されるメッセージの中のtemplateの参照先を確認
     + テンプレートは自分の環境では，パッケージが入っているフォルダの，rmarkdown > rmd > latexのフォルダ中に入っていた。これをテキストエディタ等で開く
     + `\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}`の行頭に`% `をつけてコメントアウトするだけ
 
