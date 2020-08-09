@@ -4,7 +4,7 @@ author: "izunyan"
 site: bookdown::bookdown_site
 documentclass: bxjsbook
 classoption: xelatex, ja=standard, b5paper
-geometry: no
+# geometry: no # rmarkdown 2.x以降では不要
 bibliography: "引用文献リスト.bib" # 引用文献の記載ファイルを指定
 biblio-style: "apalike"            # 引用文献の表示スタイルをAPA形式に
 ---

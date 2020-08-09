@@ -1,3 +1,4 @@
+# (PART) 第一部 {-#ichibu} 
 # 章の追加 {#intro}
 
 * 新しいRmdファイルを作成
@@ -6,6 +7,8 @@
 * ここから1章として始める（はじめにの章に数字をつけない）ためには，index.Rmdのヘッダーの後に `{-}`をつける
   - 参照：https://bookdown.org/yihui/bookdown/markdown-syntax.html#block-level-elements
   - ただし，エラー回避のため，漢字が含まれるヘッダーについて，識別子（例：`{-#hajimeni}`）をつけている
+  - 灰色の一部、二部などの特別なヘッダーは`# (PART) 第一部 {-#ichibu} `のように（PART）とつける、詳しくは次を参照：https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers
+
 
 ## テキスト内のリンク {#intro_link}
 

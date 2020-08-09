@@ -33,9 +33,11 @@ Please do this via either
 > ! LaTeX Error: Option clash for package geometry.
 
 * 対処法
-    + 参考: [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)
-    + Buid BookでPDFを作成した後に表示されるメッセージの中のtemplateの参照先を確認
-    + テンプレートは自分の環境では，パッケージが入っているフォルダの，rmarkdown > rmd > latexのフォルダ中に入っていた。これをテキストエディタ等で開く
-    + `\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}`の行頭に`% `をつけてコメントアウトするだけ
+    + 参考[RStudioを用いたRMarkdownによる日本語PDFファイル出力のために必要なこと](https://qiita.com/smina2018/items/0aaa56a448c95e87f6a7)
+    + rmarkdown 2.x以上ではYAMLヘッダーで`geometry: no`を付けない
+    + ~~参考: [Bookdownによる技術系同人誌執筆](https://teastat.blogspot.com/2019/01/bookdown.html)~~
+    + ~~Buid BookでPDFを作成した後に表示されるメッセージの中のtemplateの参照先を確認~~ → rmarkdown 2.x以降は出てこない
+    + ~~テンプレートは自分の環境では，パッケージが入っているフォルダの，rmarkdown > rmd > latexのフォルダ中に入っていた。これをテキストエディタ等で開く~~
+    + ~~`\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}`の行頭に`% `をつけてコメントアウトするだけ~~
 
 
