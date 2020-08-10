@@ -3,8 +3,8 @@ title: "bookdownの体験"
 author: "やわらかクジラ"
 date: "`r format(Sys.time(), '%Y/%m/%d')`"
 site: bookdown::bookdown_site
-github-repo: "izunyan/practice-bookdown-minimal"
-cover-image: "images/cover.png"
+github-repo: izunyan/practice-bookdown-minimal
+cover-image: images/cover.png
 documentclass: bxjsbook
 classoption: xelatex, ja=standard, b5paper
 # geometry: no # rmarkdown 2.x以降では不要

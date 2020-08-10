@@ -1,4 +1,5 @@
 book_filename: "bookdown_taiken"
+repo: https://github.com/izunyan/practice-bookdown-minimal
 chapter_name: "ch: " # 自動で章の名前をつける
 output_dir: "docs"   # githubでweb公開するためにdocsフォルダに変更
 rmd_files: ["index.Rmd", "intro.Rmd", "図.Rmd", "文献の引用方法.Rmd", "エラー対処.Rmd", "参考サイト.Rmd", "appendix.Rmd", "引用文献.Rmd"] # rmdファイルの順番指定
