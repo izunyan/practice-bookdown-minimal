@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>ch: 1 章の追加 | bookdownの体験</title>
   <meta name="description" content="ch: 1 章の追加 | bookdownの体験" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="ch: 1 章の追加 | bookdownの体験" />
   <meta property="og:type" content="book" />
@@ -49,7 +49,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
@@ -209,7 +208,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">1.2</span> 図の参照</h2>
 <ul>
 <li>Figure<a href="figure.html#fig:irisplot">2.1</a>にとぶ。左のリンク部分は<code>\@ref(fig:irisplot)</code>と記述</li>
+<li>rのコードで生成されない図へのリンクについては、以下のチャンクのコードで対応。→Figure<a href="index.html#fig:migiue">0.2</a>へのリンク</li>
 </ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="intro.html#cb2-1"></a><span class="co"># {r migiue, ecoh = FALSE, fig.cap=&#39;Build Bookの場所&#39;, fig.align = &quot;center&quot;}</span></span>
+<span id="cb2-2"><a href="intro.html#cb2-2"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;images/migiue.JPG&quot;</span>)</span></code></pre></div>
+<p>参照： <a href="https://bookdown.org/yihui/bookdown/figures.html" class="uri">https://bookdown.org/yihui/bookdown/figures.html</a> のFIGURE 2.4: Three knitr logos included in the document from an external PNG image file.</p>
+<p>チャンクオプションの設定例</p>
 
 </div>
 </div>

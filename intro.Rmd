@@ -21,5 +21,16 @@
 ## 図の参照 {#intro_sansho}
 
 * Figure\@ref(fig:irisplot)にとぶ。左のリンク部分は`\@ref(fig:irisplot)`と記述
+* rのコードで生成されない図へのリンクについては、以下のチャンクのコードで対応。→Figure\@ref(fig:migiue)へのリンク
+
+```{r eval = FALSE}
+# {r migiue, ecoh = FALSE, fig.cap='(ref:migiue)', fig.align = "center"}
+knitr::include_graphics("images/migiue.JPG")
+```
+
+参照： https://bookdown.org/yihui/bookdown/figures.html のFIGURE 2.4: Three knitr logos included in the document from an external PNG image file.
+
+チャンクオプションの設定例
+
 
 

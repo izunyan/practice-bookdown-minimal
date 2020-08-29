@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>ch: 2 図 | bookdownの体験</title>
   <meta name="description" content="ch: 2 図 | bookdownの体験" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="ch: 2 図 | bookdownの体験" />
   <meta property="og:type" content="book" />
@@ -49,7 +49,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
@@ -191,7 +190,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>図の名前の指定<code>(ref:irisplot) 図のタイトル</code></li>
 </ul>
 
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="figure.html#cb2-1"></a><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="figure.html#cb3-1"></a><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Length, iris<span class="op">$</span>Petal.Length)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:irisplot"></span>
 <img src="bookdown_taiken_files/figure-html/irisplot-1.png" alt="図のタイトル" width="70%" />
 <p class="caption">
@@ -199,9 +198,9 @@ Figure 2.1: 図のタイトル
 </p>
 </div>
 
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="figure.html#cb3-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="figure.html#cb4-1"></a><span class="kw">ggplot</span>(iris) <span class="op">+</span></span>
-<span id="cb4-2"><a href="figure.html#cb4-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="figure.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="figure.html#cb5-1"></a><span class="kw">ggplot</span>(iris) <span class="op">+</span></span>
+<span id="cb5-2"><a href="figure.html#cb5-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(Sepal.Length, Petal.Length, <span class="dt">color =</span> Species))</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:iris-ggplot"></span>
 <img src="bookdown_taiken_files/figure-html/iris-ggplot-1.png" alt="ggplot" width="70%" />
 <p class="caption">
@@ -220,15 +219,15 @@ Figure 2.2: ggplot
 </div>
 <div id="figure_table" class="section level2">
 <h2><span class="header-section-number">2.2</span> 表</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="figure.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
-<span id="cb5-2"><a href="figure.html#cb5-2"></a>  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="co"># 1-3列目のみ，最初の5行</span></span>
-<span id="cb5-3"><a href="figure.html#cb5-3"></a>  <span class="dt">caption =</span> <span class="st">&#39;mtcarsデータの最初の5行の表&#39;</span></span>
-<span id="cb5-4"><a href="figure.html#cb5-4"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="figure.html#cb6-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
+<span id="cb6-2"><a href="figure.html#cb6-2"></a>  <span class="kw">head</span>(mtcars[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>], <span class="dv">5</span>), <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="co"># 1-3列目のみ，最初の5行</span></span>
+<span id="cb6-3"><a href="figure.html#cb6-3"></a>  <span class="dt">caption =</span> <span class="st">&#39;mtcarsデータの最初の5行の表&#39;</span></span>
+<span id="cb6-4"><a href="figure.html#cb6-4"></a>)</span></code></pre></div>
 <table>
 <caption><span id="tab:table-mtcar">Table 2.1: </span>mtcarsデータの最初の5行の表</caption>
 <thead>
 <tr class="header">
-<th align="left"></th>
+<th></th>
 <th align="right">mpg</th>
 <th align="right">cyl</th>
 <th align="right">disp</th>
@@ -236,31 +235,31 @@ Figure 2.2: ggplot
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Mazda RX4</td>
+<td>Mazda RX4</td>
 <td align="right">21.0</td>
 <td align="right">6</td>
 <td align="right">160</td>
 </tr>
 <tr class="even">
-<td align="left">Mazda RX4 Wag</td>
+<td>Mazda RX4 Wag</td>
 <td align="right">21.0</td>
 <td align="right">6</td>
 <td align="right">160</td>
 </tr>
 <tr class="odd">
-<td align="left">Datsun 710</td>
+<td>Datsun 710</td>
 <td align="right">22.8</td>
 <td align="right">4</td>
 <td align="right">108</td>
 </tr>
 <tr class="even">
-<td align="left">Hornet 4 Drive</td>
+<td>Hornet 4 Drive</td>
 <td align="right">21.4</td>
 <td align="right">6</td>
 <td align="right">258</td>
 </tr>
 <tr class="odd">
-<td align="left">Hornet Sportabout</td>
+<td>Hornet Sportabout</td>
 <td align="right">18.7</td>
 <td align="right">8</td>
 <td align="right">360</td>
